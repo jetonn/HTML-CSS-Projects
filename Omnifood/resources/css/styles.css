@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif; /* Set the font fimaly to 'Lato' */
+    background-color: #fff; /* Set the background color */
+    font-weight: 300;
+    font-size: 20px;
+    color: #555; /* Set the color of the elements */
+}
+
+h1 {
+    margin-top: 0; /* Remove the default margin at the top */
+    color: #fff; /* Set the color of the font to white */
+    font-size: 200%; /* Increase the font by 200%, which equates to 40px */
+    font-weight: 300;
+    text-transform: uppercase; /* Change all the characters to uppercase */
+    letter-spacing: 1px; /* Add space between letter */
+    word-spacing: 6px; /* App space between words */
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* Set the bcg as an image */
+    background-size: cover; /* Scale the image without cropping or strectching it */
+    background-position: center; /* Set the starting position of a bcg image to the center */
+    height: 100vh; /* Cover 100% of the full viewport height */
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+/* Styling the two buttons */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px; /* Add padding to the button */
+    font-weight: 300; /* Set the font weight */
+    text-decoration: none; /* Remove the decorative, under line */
+    border-radius: 200px; /* Set the border radius */
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff; /* Set the color of the text to white */
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22; /* Set the color of the text to orange */
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #e67e22;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #e67e22;
+    background-color: transparent;
+    color: #e67e22; /* Set the color of the text to white */
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #e67e22;
+    color: #fff; /* Set the color of the text to orange */
+}
