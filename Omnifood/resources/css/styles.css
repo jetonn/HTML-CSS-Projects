@@ -38,7 +38,7 @@ header {
 }
 
 
-/* Styling the two buttons */
+/* Styling the buttons on the front page */
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -51,32 +51,32 @@ header {
 
 .btn-full:link,
 .btn-full:visited {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: #e67e22; /* Set the color of the button to orange */
+    border: 1px solid #e67e22; /* Set the color of the border to orange */
     color: #fff; /* Set the color of the text to white */
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #e67e22;
+    border: 1px solid #e67e22; /* Set the color of the border to orange */
     color: #e67e22; /* Set the color of the text to orange */
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #e67e22;
+    background-color: #e67e22; /* Set the bcg color to orange */
 }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #e67e22;
-    background-color: transparent;
+    border: 1px solid #e67e22; /* Set the color of the border to orange */
+    background-color: transparent; /* Make the bcg transparent */
     color: #e67e22; /* Set the color of the text to white */
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #e67e22;
+    border: 1px solid #e67e22; /* Set the color of the border to orange */
     color: #fff; /* Set the color of the text to orange */
 }
