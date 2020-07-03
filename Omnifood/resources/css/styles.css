@@ -12,33 +12,11 @@ html {
     color: #555; /* Set the color of the elements */
 }
 
-header h1 {
-    margin-top: 0; /* Remove the default margin at the top */
-    color: #fff; /* Set the color of the font to white */
-    font-size: 200%; /* Increase the font by 200%, which equates to 40px */
-    font-weight: 300;
-    text-transform: uppercase; /* Change all the characters to uppercase */
-    letter-spacing: 1px; /* Add space between letter */
-    word-spacing: 6px; /* App space between words */
-}
+/****************************************************
+*           THE LANDING PAGE (HOME PAGE)            *
+*****************************************************/
 
-
-/* ----------------------- HEADER ----------------------- */
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* Set the bcg as an image */
-    background-size: cover; /* Scale the image without cropping or strectching it */
-    background-position: center; /* Set the starting position of a bcg image to the center */
-    height: 100vh; /* Cover 100% of the full viewport height */
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
+/* -------------------------- Nav Bar -------------------------- */
 .row {
     display: flex;
     justify-content: space-around;
@@ -77,92 +55,31 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
-.bottom-container {
-    display: flex;
-}
-
-h2 {
+/* -------------------------- HEADER -------------------------- */
+header h1 {
+    margin-top: 0; /* Remove the default margin at the top */
+    color: #fff; /* Set the color of the font to white */
+    font-size: 200%; /* Increase the font by 200%, which equates to 40px */
     font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
+    text-transform: uppercase; /* Change all the characters to uppercase */
+    letter-spacing: 1px; /* Add space between letter */
+    word-spacing: 6px; /* App space between words */
 }
 
-h2::after {
-    display: block;
-    height: 3px;
-    background-color: #e67e22;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* Set the bcg as an image */
+    background-size: cover; /* Scale the image without cropping or strectching it */
+    background-position: center; /* Set the starting position of a bcg image to the center */
+    height: 100vh; /* Cover 100% of the full viewport height */
 }
 
-/* --------- Paragraphs --------- */
-.long-copy {
-    line-height: 145%;
-    width: 70%;
-    margin: 0 auto;
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
-
-.box {
-    padding: 1%;
-}
-
-.box p {
-    font-size: 90%;
-    line-height: 145%;
-}
-
-h3 {
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 110%;
-    text-align: center;
-    
-    margin-bottom: 15px;
-}
-
-
-/* --------- Icons --------- */
-.icon {
-    font-size: 300%;
-    display: block;
-    color: #e67e22;
-    margin-bottom: 15px;
-    margin: 3px auto 15px auto;
-}
-
-/* --------- Images --------- */
-.meals-showcase {
-    list-style: none;
-    width: 100%;
-}
-
-.meals-showcase li {
-    display: block;
-    float: left;
-    width: 25%;
-}
-
-.meal-photo {
-    width: 100%;
-    margin: 0;
-    
-}
-
-.meal-photo img {
-    width: 100%;
-    height: auto;
-}
-
-.top {
-    margin-bottom: 30px;
-}
-
 
 /* ------------------- Styling the buttons on the main page ------------------- */
 .btn:link,
@@ -206,3 +123,94 @@ h3 {
     border: 1px solid #e67e22; /* Set the color of the border to orange */
     color: #fff; /* Set the color of the text to orange */
 }
+
+
+/****************************************************
+*           THE Subpage (SHOW MORE PAGE)            *
+*****************************************************/
+
+/* -------------------------- Show More Section -------------------------- */
+.bottom-container {
+    display: flex;
+}
+
+h2 { /* Styling the heading of the 'Show More' section */
+    margin-top: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2::after { /* The line below the headding in the 'Show More' section */
+    display: block;
+    height: 3px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.long-copy { /* Paragraph */
+    line-height: 145%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.box { 
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    text-align: center;
+    
+    margin-bottom: 15px;
+}
+
+.icon { /* Style the icons of each subttile */
+    font-size: 300%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 15px;
+    margin: 3px auto 15px auto;
+}
+
+/* --------- Images --------- */
+.meals-showcase {
+    margin-top: 30px;
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
